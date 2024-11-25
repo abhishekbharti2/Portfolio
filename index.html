@@ -59,7 +59,6 @@
     <br><br>
 
     <section id="about" class="hidden">
-        <h1 class="nav-links">About</h1>
         <div id="abt-intro" class="hidden">
             <div id="abt-img" class="hidden">
                 <img src="Dataset/image-1.png" alt="">
@@ -75,12 +74,10 @@
                 <p>Electronics and Communication Engineering <br>ECE</p>
             </div>
         </div>
-        <a href="https://drive.google.com/file/d/1JNNTGP3P3IeaBpVJz92A2l6p4vDaQJAP/view?usp=drive_link" class="sbmt"
-            id="cv">Get CV</a>
+        <a href="Dataset/Resume.pdf" class="sbmt" id="cv">Get CV</a>
     </section>
     <br><br>
     <section id="skills" class="hidden">
-        <h1 class="nav-links">Technical Skills</h1>
         <div class="hidden" id="abt-intro">
             <div class="abt-text" id="skill-text">
                 <li><span>HTML</span> <span style="width: 48.5%;"></span><strong>97%</strong></li>
@@ -93,13 +90,12 @@
                 <li><span>DSA</span> <span style="width: 40%;"></span><strong>80%</strong></li>
             </div>
             <div id="abt-img" class="hidden">
-                <img src="Dataset/image-2.png" alt="">
+                <img src="Dataset/image.png" alt="">
             </div>
         </div>
     </section>
     <br><br>
     <section id="projects" class="hidden">
-        <h1 class="nav-links">Projects</h1>
         <div class="all-pts">
 
             <div class="hidden">
@@ -160,17 +156,17 @@
     <br><br>
     <section id="contact" class="hidden">
         <main>
-            <h1 class="nav-links">Contact</h1>
             <div>
                 <h3 class="calleml">&#9743; Call<span>+91 9713 3979 75</span></h3>
                 <h3 class="calleml">&#9993; Email<span>adjack720@gmail.com</span></h3>
             </div>
             <h3>Or</h3>
             <div>
-                <form onsubmit="sendEmail(); reset(); return false;">
-                    <input type="text" placeholder="Enter Name" id="cliName">
-                    <input type="text" id="cliGmail" placeholder="Email address">
-                    <textarea name="" id="cliQuery" cols="33" rows="7" placeholder="Write Something"></textarea>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="487b169d-1360-4354-8f44-1e908b73e1cc" />
+                    <input type="text" placeholder="Enter Name" id="cliName" name="Name" >
+                    <input type="text" id="cliGmail" placeholder="Email address" name="Gmail" >
+                    <textarea name="Message" id="cliQuery" cols="33" rows="7" placeholder="Write Something"></textarea>
                     <input type="submit" value="Send" class="sbmt">
                 </form>
             </div>
